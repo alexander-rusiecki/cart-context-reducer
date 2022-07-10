@@ -1,6 +1,10 @@
+import { useContext } from 'react';
 import { Link } from 'react-router-dom';
+import { CartContextType } from '../@types/cart';
+import { CartContext } from '../context/CartProvider';
 
 const Navbar = () => {
+  const { cart } = useContext(CartContext) as CartContextType;
   return (
     <header>
       <nav>
@@ -12,6 +16,7 @@ const Navbar = () => {
             <Link to="/products">Products</Link>
           </li>
         </ul>
+        <p>{cart.length}</p>
       </nav>
     </header>
   );

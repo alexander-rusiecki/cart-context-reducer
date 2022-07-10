@@ -1,11 +1,21 @@
+import { useContext } from 'react';
+import { CartContextType } from '../@types/cart';
 import { IProduct } from '../@types/product';
+import { CartContext } from '../context/CartProvider';
 
 const Product = (props: IProduct) => {
+  const { name, price, image } = props;
+  const { addToCart, removeFromCart } = useContext(
+    CartContext
+  ) as CartContextType;
+
   return (
     <div>
-      <p>{props.name}</p>
-      <img src={props.image} alt={props.name} />
-      <p>{props.price}</p>
+      <p>{name}</p>
+      <img src={image} alt={props.name} />
+      <p>{price}</p>
+      <button onClick={() => addToCart(props)}>add to cart</button>
+      <button onClick={() => removeFromCart(props.id)}>remove from cart</button>
     </div>
   );
 };
