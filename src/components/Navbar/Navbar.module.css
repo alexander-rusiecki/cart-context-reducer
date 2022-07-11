@@ -1,0 +1,47 @@
+.header {
+  height: 10vh;
+  width: 100%;
+  background-color: black;
+  color: white;
+  position: fixed;
+}
+
+.nav {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 2em;
+}
+
+.flex {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.next {
+  display: flex;
+}
+
+.lists {
+  margin-right: 2em;
+  list-style-type: none;
+}
+
+.links {
+  text-decoration: none;
+  color: white;
+}
+
+.relative {
+  position: relative;
+}
+
+.absolute {
+  position: absolute;
+  top: 0;
+  right: 0;
+}

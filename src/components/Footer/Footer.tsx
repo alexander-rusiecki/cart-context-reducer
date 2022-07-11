@@ -1,7 +1,9 @@
+import classes from './Footer.module.css';
+
 const Footer = () => {
   const today = new Date();
   return (
-    <footer>
+    <footer className={classes.footer}>
       <p>Alexander Rusiecki &copy; {today.getFullYear()}</p>
     </footer>
   );
