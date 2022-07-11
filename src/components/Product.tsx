@@ -1,7 +1,7 @@
 import { useContext } from 'react';
-import { CartContextType } from '../@types/cart';
-import { IProduct } from '../@types/product';
-import { CartContext } from '../context/CartProvider';
+import { CartContextType } from '@/@types/cart';
+import { IProduct } from '@/@types/product';
+import { CartContext } from '@/context/CartProvider';
 
 const Product = (props: IProduct) => {
   const { name, price, image } = props;

@@ -1,4 +1,4 @@
-import { cardProps } from '../../@types/card';
+import { cardProps } from '@/@types/card';
 import classes from './Card.module.css';
 
 const Card = (props: cardProps) => {

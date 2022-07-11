@@ -1,8 +1,8 @@
 import { useState } from 'react';
-import { IProduct } from '../@types/product';
-import { products } from '../db/products';
-import Card from '../UI/Card/Card';
-import Product from '../components/Product';
+import { IProduct } from '@/@types/product';
+import { products } from '@/db/products';
+import Card from '@/UI/Card/Card';
+import Product from '@/components/Product';
 
 const ProductList = () => {
   const [productList] = useState<IProduct[]>(products);

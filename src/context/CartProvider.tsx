@@ -1,6 +1,6 @@
 import { createContext, useState } from 'react';
-import { CartContextType, providerProps } from '../@types/cart';
-import { IProduct } from '../@types/product';
+import { CartContextType, providerProps } from '@/@types/cart';
+import { IProduct } from '@/@types/product';
 
 export const CartContext = createContext<CartContextType | null>(null);
 
