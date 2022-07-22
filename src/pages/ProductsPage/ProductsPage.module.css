@@ -1,4 +1,7 @@
 .products-wrapper {
+  padding: 15vh 0;
+  margin: 0 auto;
   display: flex;
+  justify-content: center;
   flex-wrap: wrap;
 }

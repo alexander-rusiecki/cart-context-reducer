@@ -5,10 +5,17 @@
   margin: 1em;
   border-radius: 0.5em;
   border: 1px solid #ccc;
+  text-align: center;
 }
 
 .card img {
   height: 100%;
   width: 100%;
   border-radius: 0.5em;
+}
+
+.card button {
+  margin: 1em;
+  padding: 0.5em 2em;
+  border-radius: 5px;
 }
