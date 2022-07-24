@@ -6,7 +6,7 @@ import classes from './Navbar.module.css';
 import { FaShoppingCart } from 'react-icons/fa';
 
 const Navbar = () => {
-  const { cart } = useContext(CartContext) as CartContextType;
+  const { productCount } = useContext(CartContext) as CartContextType;
   return (
     <header className={classes.header}>
       <nav className={classes.nav}>
@@ -28,7 +28,7 @@ const Navbar = () => {
               <FaShoppingCart />
             </li>
             <li className={classes.lists}>
-              <p>{cart.length}</p>
+              <p>{productCount}</p>
             </li>
           </div>
         </ul>
